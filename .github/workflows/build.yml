@@ -222,7 +222,7 @@ jobs:
           echo "::set-output name=version::$checkov_version"
           echo "::set-output name=major_version::$checkov_major_version"
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@33a481be3e179353cb7793a92b57cf9a6c985860  # v4
+        uses: elgohr/Publish-Docker-Github-Action@30b8f20a9790150e241509e2d1cb63a83d1ab614  # v4
         with:
           name: bridgecrew/checkov
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -243,7 +243,7 @@ jobs:
           echo "::set-output name=major_version::$checkov_major_version"
         id: versions
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@33a481be3e179353cb7793a92b57cf9a6c985860  # v4
+        uses: elgohr/Publish-Docker-Github-Action@30b8f20a9790150e241509e2d1cb63a83d1ab614  # v4
         with:
           name: bridgecrew/checkov-k8s
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -268,7 +268,7 @@ jobs:
         id: versions
       - name: Publish to Registry
         id: docker_publish
-        uses: elgohr/Publish-Docker-Github-Action@33a481be3e179353cb7793a92b57cf9a6c985860  # v4
+        uses: elgohr/Publish-Docker-Github-Action@30b8f20a9790150e241509e2d1cb63a83d1ab614  # v4
         with:
           name: bridgecrew/whorf
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -303,7 +303,7 @@ jobs:
           echo "::set-output name=version::$checkov_version"
           echo "::set-output name=major_version::$checkov_major_version"
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@33a481be3e179353cb7793a92b57cf9a6c985860  # v4
+        uses: elgohr/Publish-Docker-Github-Action@30b8f20a9790150e241509e2d1cb63a83d1ab614  # v4
         with:
           name: bridgecrew/checkov
           username: ${{ secrets.DOCKERHUB_USERNAME }}
